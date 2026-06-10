@@ -14,14 +14,15 @@ The objective of this project is to automate the entire software delivery lifecy
 The implementation follows the Shift-Left Security Model, ensuring vulnerabilities and code quality issues are detected before deployment.
 
 🎯 Project Objectives
-•	Automate application delivery using Jenkins
-•	Implement secure CI/CD pipeline
-•	Perform static code analysis using SonarQube
-•	Scan container images using Trivy
-•	Push images to Docker Hub
-•	Deploy application automatically on AWS EC2
-•	Implement security best practices
-•	Enable continuous monitoring and validation
+
+•  Automate application delivery using Jenkins
+•  Implement secure CI/CD pipeline
+•  Perform static code analysis using SonarQube
+•  Scan container images using Trivy
+•  Push images to Docker Hub
+•  Deploy application automatically on AWS EC2
+•  Implement security best practices
+•  Enable continuous monitoring and validation
 
 The complete workflow automates the software delivery lifecycle from source code commit to production deployment.
 
