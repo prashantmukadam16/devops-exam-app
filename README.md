@@ -13,16 +13,23 @@ This repository demonstrates a complete **Production DevSecOps CI/CD Pipeline** 
 The objective of this project is to automate the entire software delivery lifecycle while integrating security controls at every stage of the pipeline.
 The implementation follows the Shift-Left Security Model, ensuring vulnerabilities and code quality issues are detected before deployment.
 
-🎯 Project Objectives
+# 🎯 Project Objectives
 
-•  Automate application delivery using Jenkins
-•  Implement secure CI/CD pipeline
-•  Perform static code analysis using SonarQube
-•  Scan container images using Trivy
-•  Push images to Docker Hub
-•  Deploy application automatically on AWS EC2
-•  Implement security best practices
-•  Enable continuous monitoring and validation
+* ✅ Automate application delivery using Jenkins
+* ✅ Implement a secure CI/CD pipeline
+* ✅ Perform static code analysis using SonarQube
+* ✅ Scan container images for vulnerabilities using Trivy
+* ✅ Push container images to Docker Hub
+* ✅ Deploy applications automatically on AWS EC2
+* ✅ Implement DevSecOps security best practices
+* ✅ Enable continuous monitoring and validation
+* ✅ Enforce quality gates before deployment
+* ✅ Integrate security into every stage of the CI/CD lifecycle
+* ✅ Improve deployment reliability and consistency
+* ✅ Reduce manual intervention through automation
+* ✅ Adopt Shift-Left Security principles
+* ✅ Build a scalable and production deployment workflow
+
 
 The complete workflow automates the software delivery lifecycle from source code commit to production deployment.
 
