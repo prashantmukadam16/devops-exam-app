@@ -9,17 +9,19 @@
 
 ## 📌 Project Overview
 
-This repository demonstrates a complete **Production-Ready DevSecOps CI/CD Pipeline** implementation for a **3-Tier Application Architecture** deployed on AWS.
+This repository demonstrates a complete **Production DevSecOps CI/CD Pipeline** implementation for a **3-Tier Application Architecture** deployed on AWS.
+The objective of this project is to automate the entire software delivery lifecycle while integrating security controls at every stage of the pipeline.
+The implementation follows the Shift-Left Security Model, ensuring vulnerabilities and code quality issues are detected before deployment.
 
-The project integrates:
-
-* Continuous Integration (CI)
-* Continuous Delivery (CD)
-* Static Application Security Testing (SAST)
-* Container Security Scanning
-* Automated Docker Image Management
-* Continuous Deployment
-* Shift-Left Security Practices
+🎯 Project Objectives
+•	Automate application delivery using Jenkins
+•	Implement secure CI/CD pipeline
+•	Perform static code analysis using SonarQube
+•	Scan container images using Trivy
+•	Push images to Docker Hub
+•	Deploy application automatically on AWS EC2
+•	Implement security best practices
+•	Enable continuous monitoring and validation
 
 The complete workflow automates the software delivery lifecycle from source code commit to production deployment.
 
@@ -155,28 +157,26 @@ Application Verification
 ├── Jenkinsfile
 │
 ├── install-scripts
-│   ├── install-jenkins.sh
-│   ├── install-docker.sh
-│   ├── install-python.sh
-│   └── install-trivy.sh
+│   ├── 1st-jenkins.sh
+│   ├── 2nd-docker.sh
+│   ├── 3rd-Adduser+python.sh
+│   └── 4th-trivy.sh
 │
 ├── frontend
-│   ├── src
-│   ├── public
-│   ├── package.json
-│   └── Dockerfile
+│   ├── admin.html
+│   ├── exam.html
+│   ├── index.html
+│   └── result.html
 │
 ├── backend
-│   ├── src
-│   ├── package.json
-│   └── Dockerfile
+│   ├── Dockerfile
+│   ├── app.py
+│   └── questions.py
 │
-├── database
-│   └── mysql-init.sql
+├── db
+│   └── init.sql
 │
-├── deployment
-│   ├── docker-compose.yml
-│   └── deployment.sh
+├── docker-compose.yml
 │
 ├── screenshots
 │   ├── jenkins
@@ -260,9 +260,13 @@ Features:
 ### Configuration
 
 ```text
-AMI           : Ubuntu 22.04
-Instance Type : t2.large
+AMI           : Ubuntu 26.04
+Instance Type : c7i-flex.large
 Storage       : 50 GB
+Security Group: Custom
+Key Pair	   : Required
+Instance Name : DevSecOps
+
 ```
 
 ---
@@ -284,7 +288,7 @@ Storage       : 50 GB
 # Step 3: Connect to Server
 
 ```bash
-ssh -i key.pem ubuntu@PUBLIC-IP
+Connect SSH to the EC2 Instance using MobaXterm tool 
 ```
 
 ---
@@ -292,7 +296,7 @@ ssh -i key.pem ubuntu@PUBLIC-IP
 # Step 4: Clone Repository
 
 ```bash
-git clone https://github.com/prashantmukadam16/3-Tier-Application-Architecture-DevSecOps.git
+git clone https://github.com/<your repo>/3-Tier-Application-Architecture-DevSecOps.git
 
 cd 3-Tier-Application-Architecture-DevSecOps
 ```
@@ -302,7 +306,7 @@ cd 3-Tier-Application-Architecture-DevSecOps
 # Step 5: Install Jenkins
 
 ```bash
-chmod +x install-scripts/install-jenkins.sh
+chmod +x *.sh
 
 ./install-scripts/install-jenkins.sh
 ```
