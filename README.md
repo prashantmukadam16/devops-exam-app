@@ -272,7 +272,7 @@ AMI           : Ubuntu 26.04
 Instance Type : c7i-flex.large
 Storage       : 50 GB
 Security Group: Custom
-Key Pair	   : Required
+Key Pair	  : Required
 Instance Name : DevSecOps
 
 ```
