@@ -618,10 +618,20 @@ screenshots/
 
 ---
 
+# ⭐ Support
+
+If you found this project helpful:
+
+⭐ Star the Repository
+
+🍴 Fork the Repository
+
+📢 Share with the DevOps Community
+
 # 👨‍💻 Author
 
 **Prashant Mukadam**
 
-DevOps | Cloud | DevSecOps Engineer
-
+DevOps Engineer | Cloud | DevSecOps | AWS | Jenkins | Docker | Kubernetes | CI/CD | Automation | SonarQube |
+Trivy
 ---
