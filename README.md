@@ -603,9 +603,3 @@ screenshots/
 DevOps | Cloud | DevSecOps Engineer
 
 ---
-
-## Microsoft Visio HLD Diagram
-
-
-
-This gives the repository a production-grade appearance suitable for GitHub portfolios, interviews, LinkedIn showcases, and DevSecOps demonstrations.
