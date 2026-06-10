@@ -591,6 +591,8 @@ screenshots/
 ├── pipeline-success.png
 └── application-running.png
 ```
+# 📸 3-Tier Application DevSecOps CI/CD HLD Architecture
+<img width="1536" height="1024" alt="DevSecOps 3 tier HLD" src="https://github.com/user-attachments/assets/a386bef1-5968-47dd-b444-856a5cc0ac9f" />
 
 ---
 
