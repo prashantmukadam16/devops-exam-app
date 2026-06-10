@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git url: 'https://github.com/prashantmukadam16/devops-exam-app.git', 
+                git url: 'https://github.com/prashantmukadam16/3-Tier-Application-Architecture-DevSecOps.git', 
                     branch: 'main'
             }
         }
@@ -104,7 +104,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git url: 'https://github.com/prashantmukadam16/devops-exam-app.git', 
+                git url: 'https://github.com/prashantmukadam16/3-Tier-Application-Architecture-DevSecOps.git', 
                     branch: 'main'
             }
         }
