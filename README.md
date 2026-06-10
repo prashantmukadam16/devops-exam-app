@@ -579,7 +579,7 @@ Health Check
 
 # 📸 Recommended Screenshots Section
 
-Add screenshots under `/screenshots` folder:
+Add screenshots
 
 ```text
 screenshots/
@@ -593,6 +593,28 @@ screenshots/
 ```
 # 📸 3-Tier Application DevSecOps CI/CD HLD Architecture
 <img width="1536" height="1024" alt="DevSecOps 3 tier HLD" src="https://github.com/user-attachments/assets/a386bef1-5968-47dd-b444-856a5cc0ac9f" />
+
+<img width="1366" height="725" alt="docker install on VM" src="https://github.com/user-attachments/assets/b1e43b3d-9f98-4293-ae6d-5071c01507cf" />
+
+<img width="1366" height="728" alt="add user and install python" src="https://github.com/user-attachments/assets/02a30081-c228-4579-b921-6221d8abd18d" />
+
+<img width="1366" height="727" alt="Trivy installation script" src="https://github.com/user-attachments/assets/7e4f66f3-3e7e-4f5e-bd81-8e90d694fb89" />
+
+<img width="1362" height="711" alt="docker login activate" src="https://github.com/user-attachments/assets/6af6e1f0-21e0-4ff7-a5d7-e0c068d643ab" />
+
+<img width="1366" height="690" alt="jenkins pipeline devsecops" src="https://github.com/user-attachments/assets/dd6ccf66-846d-4b52-990c-2260a3024ff1" />
+
+<img width="1333" height="663" alt="pipeline stages" src="https://github.com/user-attachments/assets/34d81447-7ca0-4bce-885e-c38486743334" />
+
+<img width="1366" height="685" alt="sonarcube" src="https://github.com/user-attachments/assets/4baf314e-e73b-412d-8bfc-7fe7b390c01c" />
+
+<img width="1366" height="715" alt="docker images" src="https://github.com/user-attachments/assets/2aebcd6a-4c2b-48f8-bd32-f43d4bbf98d6" />
+
+<img width="1366" height="685" alt="DockerHub Image" src="https://github.com/user-attachments/assets/d942bf1a-54b7-42ef-aeb6-6c637d04a6a5" />
+
+<img width="1366" height="687" alt="Finish Jenkins pipeline new" src="https://github.com/user-attachments/assets/de2c97d4-21e9-495e-98e8-e465fa5b50e6" />
+
+<img width="1365" height="684" alt="App Page" src="https://github.com/user-attachments/assets/17146b91-08fe-46bf-a47a-dfc2fcf153b8" />
 
 ---
 
