@@ -316,7 +316,17 @@ cd 3-Tier-Application-Architecture-DevSecOps
 ```bash
 chmod +x *.sh
 
-./install-scripts/install-jenkins.sh
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+java -version
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+sudo apt install jenkins
 ```
 
 Verify:
@@ -330,9 +340,8 @@ systemctl status jenkins
 # Step 6: Install Docker
 
 ```bash
-chmod +x install-scripts/install-docker.sh
 
-./install-scripts/install-docker.sh
+./2nd-Docker.sh
 ```
 
 Verify:
@@ -343,12 +352,20 @@ docker --version
 
 ---
 
+# Step 7: Install Python and Adduser
+
+```bash
+
+./3rd-Adduser+python.sh
+```
+
+---
+
 # Step 7: Install Trivy
 
 ```bash
-chmod +x install-scripts/install-trivy.sh
 
-./install-scripts/install-trivy.sh
+./4th-Trivy.sh
 ```
 
 Verify:
@@ -371,7 +388,7 @@ sonarqube:lts-community
 Access:
 
 ```text
-http://SERVER-IP:9000
+http://YOUR SONARQUBE SERVER-IP:9000
 ```
 
 ---
@@ -381,7 +398,7 @@ http://SERVER-IP:9000
 Open:
 
 ```text
-http://SERVER-IP:8080
+http://YOUR JENKINS SERVER-IP:8080
 ```
 
 Get Initial Password:
@@ -419,7 +436,7 @@ Add:
 
 ```text
 Name: SonarQube
-URL : http://SERVER-IP:9000
+URL : http://YOUR SONARQUBE SERVER-IP:9000
 ```
 
 ---
@@ -459,7 +476,7 @@ ID: sonar-token
 # Step 14: Configure SonarQube Webhook
 
 ```text
-http://SERVER-IP:8080/sonarqube-webhook/
+http://YOUR JENKINS SERVER-IP:8080/sonarqube-webhook/
 ```
 
 ---
@@ -514,8 +531,8 @@ Health Check
 | ----------- | ---------------------------------------------- |
 | Frontend    | [http://SERVER-IP:3000](http://SERVER-IP:3000) |
 | Backend API | [http://SERVER-IP:5000](http://SERVER-IP:5000) |
-| Jenkins     | [http://SERVER-IP:8080](http://SERVER-IP:8080) |
-| SonarQube   | [http://SERVER-IP:9000](http://SERVER-IP:9000) |
+| Jenkins     | [http://YOUR JENKINS SERVER-IP:8080](http://SERVER-IP:8080) |
+| SonarQube   | [http://YOUR SONARQUBE SERVER-IP:9000](http://SERVER-IP:9000) |
 
 ---
 
